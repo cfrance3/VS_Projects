@@ -370,8 +370,8 @@ public class Player {
     private Color getWallColor(double direction) {
        
         double magnitude = Math.min(getDistToHorzWall(direction), getDistToVertWall(direction));
-        int rx = (int) (x + getXDelta(direction, magnitude + 2));
-        int ry = (int) (y + getYDelta(direction, magnitude + 2));
+        int rx = (int) (x + getXDelta(direction, magnitude + 4));
+        int ry = (int) (y + getYDelta(direction, magnitude + 4));
         Color color;
         if(gp.map[gp.getSquareIndex(rx, ry)] == 1) {
             color = new Color((int) (255 - (magnitude * .2)), 0, 0);
