@@ -429,7 +429,6 @@ public class Player {
     public void draw(Graphics2D g2) {
         g2.setColor(Color.yellow);
         g2.fillOval(screenX - 3, screenY - 3, 7, 7);
-        //drawAllRays(g2);
         drawAllRays(g2);
         drawDirection(g2);
     }
